@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgMain"
+        android:layout_width="0dp"
+        android:layout_height="191dp"
+        android:src="@drawable/homepage1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imgMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+
+        <Button
+            android:id="@+id/cart_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/cart"
+            android:padding="16dp"
+            android:text="."
+            android:textSize="0dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_search"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/profile"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/products_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/buttons_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/food_button_1"
+            android:layout_width="143dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_2"
+            android:layout_width="118dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/abc"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_4"
+            android:layout_width="133dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pqr"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_5"
+            android:layout_width="143dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/abc"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_6"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkeyfood"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_7"
+            android:layout_width="133dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkey"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_8"
+            android:layout_width="146dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkey"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_9"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/paida"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_10"
+            android:layout_width="133dp"
+            android:layout_height="117dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/todo1" />
+        <ImageButton
+            android:id="@+id/food_button_11"
+            android:layout_width="143dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_12"
+            android:layout_width="118dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/abc"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_14"
+            android:layout_width="133dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pqr"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_15"
+            android:layout_width="143dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/abc"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_16"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkeyfood"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_17"
+            android:layout_width="133dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkey"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_18"
+            android:layout_width="146dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/turkey"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_19"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/paida"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/food_button_20"
+            android:layout_width="133dp"
+            android:layout_height="117dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/todo1" />
+
+    </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

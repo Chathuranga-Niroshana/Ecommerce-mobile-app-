@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ecommerce App</string>
+    <string name="login">login</string>
+    <string name="crt">crt</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO1</string>
+</resources>
